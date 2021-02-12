@@ -44,7 +44,7 @@ namespace WebApp_Test.Data
         }
         public int EditBlog(int num, string heading, string body)
         {
-            int data = EditBlog(num, heading, body);
+            int data = Editblog(num, heading, body);
             return data;
         }
 

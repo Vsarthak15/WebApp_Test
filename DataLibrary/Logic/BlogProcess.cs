@@ -22,7 +22,7 @@ namespace DataLibrary.Logic
             return SqlDataAccess.SaveData<blogModel>(sql);
         }
 
-        public static int EditBlog(int num, string heading, string body)
+        public static int Editblog(int num, string heading, string body)
         {
             blogModel data = new blogModel
             {
@@ -30,7 +30,7 @@ namespace DataLibrary.Logic
                 heading = heading,
                 body = body
             };
-            string sql = "udpdate dbo.BlogData set heading='"+data.heading+"',body='"+data.body+"' where num="+data.num+";";
+            string sql = "update dbo.BlogData set heading='"+data.heading+"',body='"+data.body+"' where num="+data.num+";";
             return SqlDataAccess.EditData<blogModel>(sql);
         }
 
